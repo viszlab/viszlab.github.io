@@ -1,7 +1,16 @@
+@font-face {
+  font-family: 'Brutalita';
+  src: url('/assets/brutalita.woff') format('woff');
+}
+
 :root {
-  --main-bg-color: #111111;
+  --main-bg-color: #000000;
   --main-text-color: #ffffff;
 
+  --secondary-bg-color: #111111;
+
+  --space-mini: 0.5em;
+  --space-small: 1em;
   --space-medium: 2em;
 }
 
@@ -9,6 +18,15 @@
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
 }
 
 html {
@@ -22,6 +40,56 @@ body {
   background: var(--main-bg-color);
   color: var(--main-text-color);
   line-height: 1.5;
+}
+
+header {
+  background: var(--secondary-bg-color);
+  color: var(--main-text-color);
+  padding: var(--space-medium);
+}
+
+header h1 {
+  font-size: 5vw;
+  border: 8px solid var(--main-text-color);
+  padding: 0 0.4em;
+  border-radius: 0.3em;
+  display: inline-block;
+  font-family: 'Brutalita', monospace;
+  letter-spacing: -15px;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 3vw;
+  margin-top: 1em;
+}
+
+header ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
+  margin-right: 2em;
+  padding: var(--space-mini) var(--space-small);
+  border-radius: 0.3em;
+}
+
+header ul li a {
+  display: flex;
+}
+
+header ul li a svg {
+  width: 25px;
+  margin-right: var(--space-mini);
+}
+
+header ul a {
+  text-decoration: none;
 }
 
 main {
