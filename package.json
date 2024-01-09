@@ -1,0 +1,24 @@
+{
+  "name": "viszlab.github.io",
+  "version": "1.0.0",
+  "description": "Source code for the one-pager website for the Viszlab project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uvathesismscis/viszlab.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uvathesismscis/viszlab.github.io/issues"
+  },
+  "homepage": "https://github.com/uvathesismscis/viszlab.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
