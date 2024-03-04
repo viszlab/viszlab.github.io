@@ -3,6 +3,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     "./assets/": "/assets",
+    "./documentation/": "/documentation",
   });
 
   return {
